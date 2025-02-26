@@ -1,0 +1,10 @@
+@charset "utf-8";
+@import "./variables/colors";
+@import "./variables/spaces";
+@import "./variables/typos";
+@import "./variables/units";
+@import "./variables/ratios";
+@import "./variables/zindex";
+
+$body-color: $color-global-gray10;
+$font-color: $color-global-gray100;

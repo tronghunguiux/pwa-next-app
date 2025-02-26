@@ -1,0 +1,77 @@
+@charset "utf-8";
+$position: top, right, bottom, left;
+
+@for $var from 0 through 5{
+    $margin-size: 10px;
+    // Margin
+    .mx-#{$var}{
+        margin-left: $margin-size*$var;
+        margin-right: $margin-size*$var;
+    }
+    .mx-#{$var}5{
+        margin-left: $margin-size*$var + $margin-size*.5;
+        margin-right: $margin-size*$var + $margin-size*.5;
+    }
+    .my-#{$var}{
+        margin-top: $margin-size*$var;
+        margin-bottom: $margin-size*$var;
+    }
+    .my-#{$var}5{
+        margin-top: $margin-size*$var + $margin-size*.5;
+        margin-bottom: $margin-size*$var + $margin-size*.5;
+    }
+    .m-#{$var}{
+        margin: $margin-size*$var
+    }
+    .m-#{$var}5{
+        margin: $margin-size*$var + $margin-size*.5
+    }
+
+    // Padding
+    .px-#{$var}{
+        padding-left: $margin-size*$var;
+        padding-right: $margin-size*$var;
+    }
+    .px-#{$var}5{
+        margin-left: $margin-size*$var + $margin-size*.5;
+        margin-right: $margin-size*$var + $margin-size*.5;
+    }
+    .py-#{$var}{
+        padding-top: $margin-size*$var;
+        padding-bottom: $margin-size*$var;
+    }
+    .py-#{$var}5{
+        padding-top: $margin-size*$var + $margin-size*.5;
+        padding-bottom: $margin-size*$var + $margin-size*.5;
+    }
+    .p-#{$var}{
+        padding: $margin-size*$var
+    }
+    .p-#{$var}5{
+        padding: $margin-size*$var + $margin-size*.5
+    }
+
+    @each $p in $position{
+        .m#{str-slice($p, 0, 1)}-#{$var}{
+            margin-#{$p}: $margin-size*$var
+        }
+        .m#{str-slice($p,0,1)}-#{$var}5{
+            margin-#{$p}: $margin-size*$var + $margin-size*.5
+        }
+        .p#{str-slice($p, 0, 1)}-#{$var}{
+            padding-#{$p}: $margin-size*$var
+        }
+        .p#{str-slice($p,0,1)}-#{$var}5{
+            padding-#{$p}: $margin-size*$var + $margin-size*.5
+
+        }
+    }
+}
+
+.mx-auto{
+    margin-left: auto;
+    margin-right: auto;
+}
+.m-auto{
+    margin: auto;
+}

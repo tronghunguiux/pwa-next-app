@@ -1,0 +1,48 @@
+.svg-icon{
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+    svg{
+        display: block;
+    }
+    &--sm{
+        width: 16px;
+        height: 16px;
+    }
+    &--md{
+        width: 20px;
+        height: 20px;
+    }
+    &--lg{
+        width: 24px;
+        height: 24px;
+    }
+
+    &--gray100{
+        svg>path{
+            fill: $black-blue;
+        }
+    }
+    &--blue{
+        svg>path{
+            fill: $blue;
+        }
+    }
+    &--red{
+        svg>path{
+            fill: $red;
+        }
+    }
+    // default left
+    &.arrow_line{
+        &--up{
+            rotate: -90deg;
+        }
+        &--right{
+            rotate: 180deg;
+        }
+        &--down{
+            rotate: 90deg;
+        }
+    }
+}

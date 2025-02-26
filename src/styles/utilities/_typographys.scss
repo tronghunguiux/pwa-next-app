@@ -1,0 +1,81 @@
+@import "../variables/colors";
+
+.text{
+    $transform: ('capitalize','uppercase', 'lowercase');
+    $align: ('left','right','center');
+
+    @each $label in $transform{
+        &-#{$label}{
+            text-transform: #{$label};
+        }
+    }
+    @each $label in $align{
+        &-#{$label}{
+            text-align: #{$label};
+        }
+    }
+}
+.font{
+    $size: (
+        'xs'   :  $font-size-xs,
+        'sm'   :  $font-size-sm,
+        'md'   :  $font-size-md,
+        'lg'   :  $font-size-lg,
+        'xl'   :  $font-size-xl,
+        '2xlg' :  $font-size-2xl,
+        '3xlg' :  $font-size-3xl,
+        '4xlg' :  $font-size-4xl,
+    );
+    $weight: ($font-weight-normal, $font-weight-bold, $font-weight-bolder);
+    $weights: (
+        '3' : 300, 
+        '5' : 500, 
+        '7' : 700, 
+        '9' : 900,
+    );
+
+    @each $label, $value in $size{
+        &-size-#{$label}{
+            font-size: $value;
+        }
+    }
+    @each $label in $weight{
+        &-weight-#{$label}{
+            font-weight: #{$label};
+        }
+    }
+    @each $label, $value in $weights{
+        &-weight-#{$label}{
+            font-weight: $value;
+        }
+    }
+}
+
+$line-heights: (
+    'xs': $line-height-xs,
+    'sm': $line-height-sm,
+    'md': $line-height-md,
+    'lg': $line-height-lg,
+    'none': 0,
+);
+.line-height{
+    @each $label, $value in $line-heights{
+        &-#{$label}{
+            line-height: $value;
+        }
+    }
+}
+.text{
+    &-bold{
+        font-weight: bold;
+    }
+    &-italic{
+        font-style: italic;
+    }
+    &-underline{
+        text-decoration: underline;
+    }
+    &-strike{
+        text-decoration: line-through;
+    }
+}

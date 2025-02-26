@@ -1,0 +1,49 @@
+@import '../_variables.scss';
+.pokemon_item{
+    padding: 8px;    
+    >a{
+        display: block;
+        padding: 4px;
+        border-radius: 4px;
+        height: 100%;
+        background-color: #ebebf0;
+        position: relative;
+        overflow: hidden;
+    }
+    .figure{
+        position: relative;
+        padding-top: 100%;
+        >img{
+            max-width: 100%;
+            height: auto;
+            position: absolute;
+            display: block;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+    .tag-generate{
+        position: absolute;
+        top: -4px;
+        right: -4px;
+        background-color: rgba( $black, 0.55);
+        color: $white;
+        line-height: 1;
+        font-size: 0.75rem;
+        padding: $margin-size*.25 $margin-size*.5;
+        border-bottom-left-radius: $border-radius-lg;
+    }
+    .info{
+        margin-top: $margin-size*.5;
+        padding: 4px;
+        text-align: center;
+        .label{
+            font-size: 1rem;
+            line-height: 1.5;
+            font-weight: bold;
+            text-transform: capitalize;
+        }
+    }
+
+}

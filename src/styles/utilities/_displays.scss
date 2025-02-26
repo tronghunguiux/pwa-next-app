@@ -1,0 +1,35 @@
+$displays: (none, flex, inline-flex, block, inline-block);
+@each $var in $displays{
+    .d-#{$var}{
+        display: $var;
+    }
+}
+
+$align-items: (stretch, center, start, end, flex-start, flex-end);
+@each $var in $align-items{
+    .align-items-#{$var}{
+        align-items: $var;
+    }
+}
+
+$justify-content: (center, flex-start, flex-end, space-evenly, space-evenly,  space-between);
+@each $var in $justify-content{
+    .justify-content-#{$var}{
+        justify-content: $var;
+    }
+}
+.d-flex-column{
+    flex-direction: column
+}
+
+.flex{
+    &-fill{
+        flex: 1 0 0;
+    }
+    &-wrap{
+        flex-wrap: wrap;
+    }
+    &-nowrap{
+        flex-wrap: nowrap;
+    }
+}

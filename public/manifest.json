@@ -1,7 +1,7 @@
 {
-    "name": "My Next.js PWA",
-    "short_name": "NextPWA",
-    "description": "Progressive Web App with Next.js",
+    "name": "Webike PWA",
+    "short_name": "Webike",
+    "description": "Webike: Motorcycle Parts, Accessories, Gears, OEM parts & Reviews",
     "start_url": "/",
     "display": "standalone",
     "theme_color": "#000000",
