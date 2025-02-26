@@ -1,0 +1,27 @@
+
+$theme-color-map:(
+    'indigo'     : $indigo,
+    'purple'     : $purple,
+    'pink'       : $pink,
+    'teal'       : $teal,
+    'cyan'       : $cyan,
+    'white'      : $white,
+    'black'      : $black,
+    'blue'       : $blue,
+    'red'        : $red,
+    'orange'     : $orange,
+    'yellow'     : $yellow,
+    'green'      : $green,
+    'gray-light' : $gray-light,
+    'gray-dark'  : $gray-dark,
+    'black-blue' : $black-blue,
+);
+
+@each $label, $value in $theme-color-map{
+    .bg-#{$label}{
+        background-color: #{$value};
+    }
+}
+
+
+

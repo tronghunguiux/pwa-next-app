@@ -1,0 +1,32 @@
+.list_object{
+    padding: 12px 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin: -4px;
+    >div{
+        flex: 0 0 calc(100% / 6);
+    }
+    a{
+        text-decoration: none;
+        color: #27272a;
+    }
+    @media only screen and (max-width: 768px) {
+        >div{
+            flex: 0 0 calc(100% / 4);
+        }
+    }
+    @media only screen and (max-width: 425px) {
+        >div{
+            padding: 4px;
+            flex: 0 0 calc(100% / 3);
+        }
+    }
+    @media only screen and (max-width: 374px) {
+        >div{
+            flex: 0 0 calc(100% / 2);
+        }
+    }
+
+
+    
+}

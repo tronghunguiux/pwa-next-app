@@ -1,0 +1,7 @@
+.dotted-line{
+    @for $i from 1 through 4{
+        &-#{$i}{
+            @include dotted-line($line: #{$i});
+        }
+    }
+}

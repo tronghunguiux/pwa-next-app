@@ -1,0 +1,24 @@
+@mixin border-line($width: 1px, $style: solid, $color: $color-global-gray20, $position: null){
+    @if($position!=null){
+      border-#{$position}: $width;
+    }@else{
+        border-width: $width;
+    }
+    border-style: $style;
+    border-color: $color;  
+};
+
+$border-posiotion: ('left','top','right','bottom');
+
+// border default 1px
+.border{
+    &-boxline{
+        @include border-line($width: 1px, $style: solid, $color: $color-global-gray20);
+    }
+    @each $value in $border-posiotion{
+        &-#{$value}{
+            @include border-line($width: 1px, $style: solid, $color: $color-global-gray20, $position: $value);
+        }
+    }
+}
+
