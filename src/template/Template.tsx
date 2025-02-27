@@ -3,7 +3,7 @@ import Header from "./Header";
 import Footer from "./Footer";
 import AsideLeft from "./AsideLeft";
 import AsideRight from "./AsideRight";
-import "@/styles/template.scss";
+import "@scss/template.scss";
 
 interface LayoutProps {
     children: React.ReactNode;

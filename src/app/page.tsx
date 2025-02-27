@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "next/link";
-import DefaultLayout from "../template/Template";
+import DefaultLayout from "@/template/Template";
 
 const Home = () => {
   return (
