@@ -25,7 +25,19 @@
     "paths": {
       "@/*": [
         "./src/*"
-      ]
+      ],
+      "@scss/*": [
+        "./src/assets/styles/*"
+      ],
+      "@css/*": [
+        "./src/assets/stylesheet/*"
+      ],
+      "@cssmin/*": [
+        "./src/assets/stylesheet-min/*"
+      ],
+      "@bootstrap/*": [
+        "./src/*"
+      ],
     },
     "strictNullChecks": true
   },

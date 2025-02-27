@@ -2,6 +2,7 @@ import PokemonItem from "@/components/PokemonItem";
 import usePokemonData from "@/getDataAPI/getPokemonData";
 import DefaultLayout from "@/template/Template";
 
+
 const PokemonPage = () => {
     const { pokemons, fetchPokemons, loading } = usePokemonData();
     return (
