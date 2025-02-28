@@ -1,75 +1,81 @@
 {
-    "name": "Webike PWA",
-    "short_name": "Webike",
-    "description": "Webike: Motorcycle Parts, Accessories, Gears, OEM parts & Reviews",
-    "start_url": "/",
-    "display": "standalone",
-    "theme_color": "#000000",
-    "background_color": "#ffffff",
-    "splash_pages": null,
-    "icons": [
-      {
-        "src": "/favicons/favicon--48px48.png",
-        "sizes": "48px48",
-        "type": "image/png"
-      },
-      {
-        "src": "/favicons/favicon--96x96.png",
-        "sizes": "96x96",
-        "type": "image/png"
-      },
-      {
-        "src": "/favicons/favicon--128x128.png",
-        "sizes": "128x128",
-        "type": "image/png"
-      },
-      {
-        "src": "/favicons/favicon--192x192.png",
-        "sizes": "192x192",
-        "type": "image/png"
-      },
-      {
-        "src": "/favicons/favicon--256x256.png",
-        "sizes": "256x256",
-        "type": "image/png"
-      },
-      {
-        "src": "/favicons/favicon--512x512.png",
-        "sizes": "512x512",
-        "type": "image/png"
-      }
-    ],
-    "screenshots": [
-      {
-        "src": "/screenshots/wallpaper--1080x1920_1.png",
-        "type": "image/png",
-        "sizes": "1080x1920",
-        "form_factor": "wide"
-      },
-      {
-        "src": "/screenshots/wallpaper--1080x1920_2.png",
-        "type": "image/png",
-        "sizes": "1080x1920",
-        "form_factor": "wide"
-      },
-      {
-        "src": "/screenshots/wallpaper--1080x1920_3.png",
-        "type": "image/png",
-        "sizes": "1080x1920",
-        "form_factor": "wide"
-      },
-      {
-        "src": "/screenshots/wallpaper--1080x1920_4.png",
-        "type": "image/png",
-        "sizes": "1080x1920",
-        "form_factor": "wide"
-      },
-      {
-        "src": "/screenshots/wallpaper--1080x1920_5.png",
-        "type": "image/png",
-        "sizes": "1080x1920",
-        "form_factor": "wide"
-      }
-    ]
-  }
-  
+  "name": "Webike PWA",
+  "short_name": "Webike",
+  "description": "Webike: Motorcycle Parts, Accessories, Gears, OEM parts & Reviews",
+  "start_url": "/",
+  "display": "standalone",
+  "theme_color": "#2A313C",
+  "background_color": "#F5F5FA",
+  "splash_pages": null,
+  "icons": [
+    {
+      "src": "/favicons/bg-favicon--48x48.png",
+      "sizes": "48px48",
+      "type": "image/png"
+    },
+    {
+      "src": "/favicons/bg-favicon--96x96.png",
+      "sizes": "96x96",
+      "type": "image/png"
+    },
+    {
+      "src": "/favicons/bg-favicon--128x128.png",
+      "sizes": "128x128",
+      "type": "image/png"
+    },
+    {
+      "src": "/favicons/bg-favicon--192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/favicons/bg-favicon--256x256.png",
+      "sizes": "256x256",
+      "type": "image/png"
+    },
+    {
+      "src": "/favicons/bg-favicon--512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "/screenshots/wallpaper--1340x1080_desktop_1.jpg",
+      "type": "image/jpg",
+      "sizes": "1340x1080",
+      "form_factor": "wide"
+    },
+    {
+      "src": "/screenshots/wallpaper--375x926_mobile_1.jpg",
+      "type": "image/jpg",
+      "sizes": "375x926",
+      "form_factor": "wide"
+    },
+    {
+      "src": "/screenshots/wallpaper--1340x1080_desktop_2.jpg",
+      "type": "image/jpg",
+      "sizes": "1340x1080",
+      "form_factor": "wide"
+    },
+    {
+      "src": "/screenshots/wallpaper--375x926_mobile_2.jpg",
+      "type": "image/jpg",
+      "sizes": "375x926",
+      "form_factor": "wide"
+    },
+    {
+      "src": "/screenshots/wallpaper--1340x1080_desktop_3.jpg",
+      "type": "image/jpg",
+      "sizes": "1340x1080",
+      "form_factor": "wide"
+    },
+    {
+      "src": "/screenshots/wallpaper--375x926_mobile_3.jpg",
+      "type": "image/jpg",
+      "sizes": "375x926",
+      "form_factor": "wide"
+    }
+  ]
+}

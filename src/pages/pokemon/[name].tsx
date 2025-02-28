@@ -34,16 +34,15 @@ const PokemonDetail: NextPage = () => {
   if (!pokemon) return <p>Loading...</p>;
 
   return (
-      <>
-        <DefaultLayout classPage={'pokemon_detail'}>
-          <div className="">
-            <h1>{pokemon.name}</h1>
-            <img src={pokemon.sprites.other['official-artwork'].front_default} alt={pokemon.name}/>
-            <p>Pokedex: {formatId(pokemon.id)}</p>
-          </div>
-        </DefaultLayout>
-      </>
-  )
-      ;
+    <>
+      <DefaultLayout classPage={'pokemon_detail'}>
+        <div className="">
+          <h1>{pokemon.name}</h1>
+          <img src={pokemon.sprites.other['official-artwork'].front_default} alt={pokemon.name} />
+          <p>Pokedex: {formatId(pokemon.id)}</p>
+        </div>
+      </DefaultLayout>
+    </>
+  );
 };
 export default PokemonDetail;
