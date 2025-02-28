@@ -4,6 +4,8 @@ import Footer from "./Footer";
 import AsideLeft from "./AsideLeft";
 import AsideRight from "./AsideRight";
 import "@scss/template.scss";
+import Head from "next/head";
+import '@/app/globals.css'
 
 interface LayoutProps {
     children: React.ReactNode;
@@ -27,8 +29,7 @@ const DefaultLayout: React.FC<LayoutProps> = ({ children, showAsideLeft = false,
                 <Footer/>
             </main>
         </>
-)
-    ;
+    ) ;
 };
 
 export default DefaultLayout;
