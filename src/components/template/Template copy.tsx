@@ -3,9 +3,8 @@ import Header from "./Header";
 import Footer from "./Footer";
 import AsideLeft from "./AsideLeft";
 import AsideRight from "./AsideRight";
-import "@scss/template.scss";
+// import "@scss/template.scss";
 import Head from "next/head";
-import '@/app/globals.css'
 
 interface LayoutProps {
     title?: string;

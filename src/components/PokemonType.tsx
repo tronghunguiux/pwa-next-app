@@ -1,4 +1,4 @@
-import '@scss/components/_poke-type.scss'
+// import '@scss/components/_poke-type.scss'
 
 interface PokemonTypeProps {
     types: string[];

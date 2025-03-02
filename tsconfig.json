@@ -30,13 +30,13 @@
         "./src/assets/styles/*"
       ],
       "@css/*": [
-        "./src/assets/stylesheet/*"
+        "./public/resources/scss/stylesheets/*"
       ],
       "@cssmin/*": [
-        "./src/assets/stylesheet-min/*"
+        "./public/assets/cssmin/*"
       ],
       "@bootstrap/*": [
-        "./src/*"
+        "./node_modules/bootstrap/*"
       ],
     },
     "strictNullChecks": true

@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import PokemonType from './PokemonType';
-import '@scss/components/_poke-list.scss';
-import '@scss/components/_poke-item.scss';
+// import '@scss/components/_poke-list.scss';
+// import '.@scss/components/_poke-item.scss';
 
 interface PokemonProps {
     id: number;

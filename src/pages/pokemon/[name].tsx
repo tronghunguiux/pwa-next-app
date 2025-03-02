@@ -1,7 +1,7 @@
 import { useRouter } from 'next/router';
 import { useEffect, useState } from 'react';
 import { NextPage } from 'next';
-import DefaultLayout from "@/template/Template";
+import Template from '@/components/template/Template';
 
 interface PokemonDetail {
   id: number;
@@ -35,13 +35,20 @@ const PokemonDetail: NextPage = () => {
 
   return (
     <>
-      <DefaultLayout classPage={'pokemon_detail'}>
+      <Template
+        title="Pokemon List"
+        description="get catch them all Pokemon"
+        image=""
+        url="/pokemon"
+        classPage="pokemon-detail-page"
+        idPage="pokemon_detail_page">
         <div className="">
           <h1>{pokemon.name}</h1>
           <img src={pokemon.sprites.other['official-artwork'].front_default} alt={pokemon.name} />
           <p>Pokedex: {formatId(pokemon.id)}</p>
         </div>
-      </DefaultLayout>
+
+      </Template>
     </>
   );
 };
