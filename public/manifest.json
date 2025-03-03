@@ -48,10 +48,10 @@
       "form_factor": "wide"
     },
     {
-      "src": "/screenshots/wallpaper--375x926_mobile_1.jpg",
+      "src": "/screenshots/wallpaper--375x750_mobile_1.jpg",
       "type": "image/jpg",
       "sizes": "375x750",
-      "form_factor": "wide"
+      "form_factor": "narrow"
     },
     {
       "src": "/screenshots/wallpaper--1340x1080_desktop_2.jpg",
@@ -60,10 +60,10 @@
       "form_factor": "wide"
     },
     {
-      "src": "/screenshots/wallpaper--375x926_mobile_2.jpg",
+      "src": "/screenshots/wallpaper--375x750_mobile_2.jpg",
       "type": "image/jpg",
       "sizes": "375x750",
-      "form_factor": "wide"
+      "form_factor": "narrow"
     },
     {
       "src": "/screenshots/wallpaper--1340x1080_desktop_3.jpg",
@@ -72,10 +72,10 @@
       "form_factor": "wide"
     },
     {
-      "src": "/screenshots/wallpaper--375x926_mobile_3.jpg",
+      "src": "/screenshots/wallpaper--375x750_mobile_3.jpg",
       "type": "image/jpg",
       "sizes": "375x750",
-      "form_factor": "wide"
+      "form_factor": "narrow"
     }
   ]
 }
