@@ -1,0 +1,19 @@
+@import '../variables';
+.btnInstallMobile{
+    position: fixed;
+    width: 48px;
+    height: 48px;
+    border-radius: 100%;
+    padding: $margin-size;
+    background-color: $blue;
+    bottom: $margin-size;
+    right: $margin-size;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    >button{
+        background-color: transparent;
+        line-height: 1;
+        color: $white;
+    }
+}

@@ -1,0 +1,42 @@
+#header {
+    background-color: $black;
+    .top-bar {
+        display: flex;
+        flex: 1 0 0;
+        
+        &__logo{
+            display: flex;
+            align-items: center;
+            img{
+                height: 23px;
+                width: auto;
+            }
+        }
+        .btn-open-browse-menu {
+            width: 48px;
+            height: 48px;
+            font-size: .4375rem;
+            background: 0 0;
+            padding: 8px 0;
+            .symbol {
+                display: block;
+                width: 24px;
+                height: 22px;
+                background: repeating-linear-gradient(0deg, $white, $white 0, $white 3px, transparent 3px, transparent 9px);
+                margin: auto;
+                position: relative;
+            }
+        }
+    }
+} 
+
+
+
+
+
+
+
+
+
+
+
