@@ -31,14 +31,14 @@
 @import "./utilities/backgrounds";
 @import "./utilities/borders";
 //@import "./utilities/flags";
-//@import "./utilities/icons";
+@import "./utilities/icons";
 //@import "./utilities/svg-icons";
 @import "./utilities/box-shadow";
 
 
 // // Template
-// @import "./templates/_header"
-// @import "./templates/_footer"
+@import "./templates/_header";
+@import "./templates/_footer";
 // @import "./templates/_search"
 // @import "./templates/_sidenav"
 
