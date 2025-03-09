@@ -16,9 +16,10 @@ interface LayoutProps {
   image?: string;
   url?: string;
   canonical?: string;
+  linkcss?: string[];
 }
 
-const DefaultLayout: React.FC<LayoutProps> = ({ title, description, keywords, image, url, canonical, children, showAsideLeft = false, showAsideRight = false, classPage = '', idPage }) => {
+const DefaultLayout: React.FC<LayoutProps> = ({ title, description, keywords, image, url, canonical, children, linkcss=[], showAsideLeft = false, showAsideRight = false, classPage = '', idPage }) => {
 
   return (
     <>
@@ -29,6 +30,7 @@ const DefaultLayout: React.FC<LayoutProps> = ({ title, description, keywords, im
         url={url}
         keywords={keywords}
         canonical={canonical ? canonical : url}
+        linkcss={linkcss}
       />
       <main id={idPage} className={"main_page " + classPage}>
         <Header />

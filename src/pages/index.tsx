@@ -1,8 +1,29 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import Template from "@/components/template/Template";
+import Image from "next/image";
 import Link from "next/link";
+import { useEffect, useState } from "react";
+import { fetchBanners } from "../getDataAPI/getBannerTopData";
+
+// Swiper
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation, Pagination, Autoplay } from "swiper/modules";
+
+import "swiper/css";
+// import "swiper/css/navigation";
+
+import TopStyle from '../assets/styles/pages/top-page.module.scss';
+
+
 
 
 export default function First() {
+    const [banners, setBanners] = useState<any[]>([]);
+
+    useEffect(() => {
+        fetchBanners().then(setBanners);
+    }, []);
+
     return (
         <>
             <Template
@@ -14,6 +35,58 @@ export default function First() {
                     idPage="first_page">
                 <div>
                     <h1>The First</h1>
+                    {/* <div>
+                        <h2>Slider 1 Item</h2>
+                        <SwiperSlider type="single" />
+
+                        <h2>Slider 6 Items</h2>
+                        <SwiperSlider type="multi" />
+                    </div>
+
+                    <div>
+                        <h2>Slider 1 Item</h2>
+                        <SlickSlider type="single" />
+
+                        <h2>Slider 6 Items</h2>
+                        <SlickSlider type="multi" />
+                    </div> */}
+                    <Swiper
+                        modules={[Navigation, Pagination, Autoplay]}
+                        // // navigation={true}
+                        // spaceBetween={30}
+                        // slidesPerView={1}
+                        // slidesPerGroup={1}
+                        // // spaceBetween={20}
+                        // loop={true}
+                        // simulateTouch={true}
+                        // allowTouchMove={true}
+                        // mousewheel={true}
+                        // initialSlide={Math.floor(banners.length / 2)}
+                        // centeredSlides={true}
+                        spaceBetween={-15}
+                        slidesPerView={1}
+                        centeredSlides={true}
+                        centeredSlidesBounds={true}
+                        centerInsufficientSlides={true}
+                        pagination={{ clickable: true }}
+                        navigation={false}
+                        loop={true} 
+                        >
+                        {banners.map((banner) => (
+                            <SwiperSlide key={banner.id} className={`${banner.class ?? ''} ${TopStyle.bannerTop}`}>
+                                <Link href={`/`} className={''}>
+                                    <figure >
+                                        <Image
+                                            width={375}
+                                            height={125}
+                                            src={banner.imageUrl} 
+                                            alt={banner.title}/>
+                                    </figure>
+                                </Link>
+                            </SwiperSlide>
+                        ))}
+                    </Swiper>
+                   
                 </div>
                 <Link href="/pokemon">
                     <button className="btn btn-outline-primary navigate-btn">Let&apos;s Catch Them All! Pokémon</button>

@@ -1,0 +1,32 @@
+[
+    {
+        "id": 1,
+        "title": "Banner 1",
+        "imageUrl": "/image-demo/banner-top/banner_top_1.jpg"
+    },
+    {
+        "id": 2,
+        "title": "Banner 2",
+        "imageUrl": "/image-demo/banner-top/banner_top_2.png"
+    },
+    {
+        "id": 3,
+        "title": "Banner 3",
+        "imageUrl": "/image-demo/banner-top/banner_top_3.png"
+    },
+    {
+        "id": 4,
+        "title": "Banner 4",
+        "imageUrl": "/image-demo/banner-top/banner_top_4.png"
+    },
+    {
+        "id": 5,
+        "title": "Banner 5",
+        "imageUrl": "/image-demo/banner-top/banner_top_5.jpg"
+    },
+    {
+        "id": 6,
+        "title": "Banner 6",
+        "imageUrl": "/image-demo/banner-top/banner_top_6.jpg"
+    }
+]

@@ -1,5 +1,11 @@
 #header {
     background-color: $black;
+    .header_top{
+        padding: 0;
+    }
+    .btn-icon{
+        background-color: transparent;
+    }
     .top-bar {
         display: flex;
         flex: 1 0 0;

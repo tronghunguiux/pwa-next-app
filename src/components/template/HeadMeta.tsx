@@ -7,6 +7,7 @@ interface HeadMetaProps {
     image?: string;
     url?: string;
     canonical?: string;
+    linkcss?: string[];
 }
 
 const HeadMeta: React.FC<HeadMetaProps> = ({
@@ -16,6 +17,7 @@ const HeadMeta: React.FC<HeadMetaProps> = ({
     image = "/default-og-image.png",
     url = "https://my-next-app.com",
     canonical,
+    linkcss = [],
 }) => {
     return (
         <Head>
@@ -54,6 +56,14 @@ const HeadMeta: React.FC<HeadMetaProps> = ({
             {/* Favicon */}
             <link rel="icon" href="/favicon.ico" />
 
+            {/* {Children} */}
+            {/* { linkcss && <link rel="stylesheet" href={linkcss} /> } */}
+            {/* Import nhiều file CSS */}
+            {linkcss.length > 0 &&
+                linkcss.map((href, index) => (
+                    <link key={index} rel="stylesheet" href={href} />
+                ))
+            }
         </Head>
     );
 };

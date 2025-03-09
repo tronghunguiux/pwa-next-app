@@ -1,7 +1,7 @@
 
 .icon{
     display: inline-block;
-    background: url('../../img-css/icon-mobile@2x.png') 0 0 no-repeat;
+    background: url('../img-css/icon-mobile@2x.png') 0 0 no-repeat;
     background-size: 312px 312px;
     line-height: inherit;
     vertical-align: middle;
@@ -31,9 +31,12 @@
             @include icon($x: 8, $y: 1);
         }
     }
-
-
-
+    &-bell-line{
+        @include icon($x: 2, $y: 1);            
+    }
+    &-bike_w{
+        @include icon($x: 5, $y: 1);
+    }
     &-phone-line{
         @include icon($x: 6, $y: 1);
     }
