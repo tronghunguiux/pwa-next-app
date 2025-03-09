@@ -11,12 +11,9 @@ import { Navigation, Pagination, Autoplay } from "swiper/modules";
 
 import "swiper/css";
 // import "swiper/css/navigation";
+import 'swiper/css/pagination';
 
-import TopStyle from '../assets/styles/pages/top-page.module.scss';
-
-
-
-
+import im from '/public/image-demo/products/product_1.jpg';
 export default function First() {
     const [banners, setBanners] = useState<any[]>([]);
 
@@ -32,63 +29,77 @@ export default function First() {
                     image="https://my-next-app.com/home-og-image.png"
                     url="/first"
                     classPage="first-page"
-                    idPage="first_page">
-                <div>
-                    <h1>The First</h1>
-                    {/* <div>
-                        <h2>Slider 1 Item</h2>
-                        <SwiperSlider type="single" />
-
-                        <h2>Slider 6 Items</h2>
-                        <SwiperSlider type="multi" />
-                    </div>
-
-                    <div>
-                        <h2>Slider 1 Item</h2>
-                        <SlickSlider type="single" />
-
-                        <h2>Slider 6 Items</h2>
-                        <SlickSlider type="multi" />
-                    </div> */}
+                    idPage="first_page"
+                    linkcss={['/assets/cssmin/pages/top-page.css']}>
+                <div className="block-container block-banner-top">
                     <Swiper
                         modules={[Navigation, Pagination, Autoplay]}
-                        // // navigation={true}
-                        // spaceBetween={30}
-                        // slidesPerView={1}
-                        // slidesPerGroup={1}
-                        // // spaceBetween={20}
-                        // loop={true}
-                        // simulateTouch={true}
-                        // allowTouchMove={true}
-                        // mousewheel={true}
-                        // initialSlide={Math.floor(banners.length / 2)}
-                        // centeredSlides={true}
-                        spaceBetween={-15}
+                        spaceBetween={0}
                         slidesPerView={1}
+                        slidesPerGroup={1}
+                        allowTouchMove={true}
+                        mousewheel={true}
+                        simulateTouch={true}
                         centeredSlides={true}
                         centeredSlidesBounds={true}
                         centerInsufficientSlides={true}
+                        autoplay={{ delay: 3500, disableOnInteraction: false}}
                         pagination={{ clickable: true }}
                         navigation={false}
                         loop={true} 
-                        >
+                        className="slide-banner">
                         {banners.map((banner) => (
-                            <SwiperSlide key={banner.id} className={`${banner.class ?? ''} ${TopStyle.bannerTop}`}>
+                            <SwiperSlide key={banner.id} className={`${banner.class ?? ''} bannerTop`}>
                                 <Link href={`/`} className={''}>
                                     <figure >
                                         <Image
                                             width={375}
                                             height={125}
                                             src={banner.imageUrl} 
-                                            alt={banner.title}/>
+                                            alt={banner.title}
+                                            loading="lazy"/>
+                                        <div className="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
                                     </figure>
                                 </Link>
                             </SwiperSlide>
                         ))}
                     </Swiper>
-                   
                 </div>
-                <Link href="/pokemon">
+                {/* <div className="block-container block-product">
+                    <div className="product-list product-card product--type_grid">
+                        <div className="product ">
+                            <a href="" className="d-block">
+                                <figure className="product-image">
+                                    <Image 
+                                        src={im} 
+                                        data-src={im} 
+                                        alt={`${im}`} 
+                                        className="object-fit-contain"/>
+                                    <div className="product-tag d-flex">
+                                        <span className="font-size-sm text-white bg-red px-05 line-height-xs d-inine-block">
+                                            asd
+                                        </span>
+                                        <span className="font-size-sm text-white bg-blue px-05 line-height-xs d-inine-block">
+                                            asd
+                                        </span>
+                                    </div>
+                                </figure>
+                            </a>
+                        </div>
+                        <div className="product ">
+                            <a href="" className="d-block line-height-sm">
+                                <figure className="product-image">
+                                    <Image 
+                                        src={im} 
+                                        data-src={im} 
+                                        alt={`${im}`} 
+                                        className="object-fit-contain"/>
+                                </figure>
+                            </a>
+                        </div>
+                    </div>
+                </div> */}
+                <Link href="/pokemon" className="line-height-lg d-block mt-1">
                     <button className="btn btn-outline-primary navigate-btn">Let&apos;s Catch Them All! Pokémon</button>
                 </Link>
             </Template>

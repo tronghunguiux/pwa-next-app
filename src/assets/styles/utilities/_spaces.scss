@@ -33,8 +33,8 @@ $position: top, right, bottom, left;
         padding-right: $margin-size*$var;
     }
     .px-#{$var}5{
-        margin-left: $margin-size*$var + $margin-size*.5;
-        margin-right: $margin-size*$var + $margin-size*.5;
+        padding-left: $margin-size*$var + $margin-size*.5;
+        padding-right: $margin-size*$var + $margin-size*.5;
     }
     .py-#{$var}{
         padding-top: $margin-size*$var;

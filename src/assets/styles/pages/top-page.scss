@@ -1,0 +1,81 @@
+@import '../variables';
+
+.bannerTop{
+    a{
+        background-color: $black;
+        line-height: 1;
+        display: block;
+        background-color: transparent;
+    }
+    figure{
+        padding-top: calc(100% / 3);
+        position: relative;
+        // border: 1px solid $gray-light;
+        overflow: hidden;
+        border-radius: 0px;
+        >img{
+            position: absolute;
+            width: 102%;
+            height: auto;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+}
+.slide-banner{
+    &.swiper-horizontal{
+        .swiper-pagination{
+            position: relative;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            line-height: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: $margin-size*.5 $margin-size;
+            .swiper-pagination-bullet{
+                width: 20px;
+                height: 4px;
+                display: inline-block;
+                border-radius: 4px;
+                &-active{
+                    background-color: $red;
+                }
+            }
+        }
+    }
+
+}
+.product-list{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 (-$margin-size*.5);
+    >div{
+        flex: 0 0 50%;
+    }
+}
+.product{
+    padding: 0 $margin-size*.5;
+    .product-image{
+        padding-top: 100%;
+        position: relative;
+        overflow: hidden;
+        background-color: $white;
+        >img{
+            width: 100%;
+            height: auto;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+    .product-tag{
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+}
