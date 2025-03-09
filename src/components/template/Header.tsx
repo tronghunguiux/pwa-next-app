@@ -4,7 +4,7 @@ import Link from "next/link";
 const Head = () => {
     return (
         <header id="header">
-            <div className="container">
+            <div className="header_top container d-flex">
                 <div className="top-bar">
                     <button type="button" className="btn-open-browse-menu" aria-label="Open side menu">
                         <span className="symbol"></span>
@@ -16,34 +16,15 @@ const Head = () => {
                             data-lazied="IMG"
                             className="defer-lazied defer-loaded" />
                     </Link>
-                    <div className="notification media-body d-flex">
-                        <div className="notification__item btn-signin">
-                            <a href="javascript:void(0)" className="notification__link btn-navmenu-user">
-                                <span className="account-info">
-                                    <span className="account-username dotted-line-1">
-                                        ichiro
-                                    </span>
-                                    <span className="account-point media">
-                                        <i className="icon icon-point resize-16"></i>
-                                        <span className="point media-body dotted-line-1 show-point">&nbsp;0 pts.</span>
-                                    </span>
-                                </span>
-                                <i className="icon-lg icon-lg-user-solid size-32"></i>
-                            </a>
-                        </div>
-                            <div className="notification__item btn-mybike">
-                                <a href="https://japan.webike.net/account/mybikes/" className="notification__link">
-                                    <i className="icon-lg icon-lg-bike-solid size-32"></i>
-                                    <span className="notification__count">5</span>
-                                </a>
-                            </div>				
-                        <div className="notification__item">
-                            <a href="https://japan.webike.net/shopping_cart.html" className="notification__link">
-                                <i className="icon-lg icon-lg-cart-solid size-32"></i>
-                                <span className="notification__count">6</span>
-                            </a>
-                        </div>
-                    </div>
+                </div>
+                <div className="flex-fill d-flex justify-content-flex-end">
+                    <button type="button" className="btn btn-icon d-flex align-items-center justify-content-center">
+                        <i className="icon icon-bike_w"></i>
+                    </button>
+                    <button type="button" className="btn btn-icon d-flex align-items-center justify-content-center">
+                        <i className="icon icon-bell-line"></i>
+                        <span className="badge"></span>
+                    </button>
                 </div>
             </div>
         </header>

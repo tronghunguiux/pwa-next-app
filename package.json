@@ -39,7 +39,8 @@
     "postcss-loader": "^8.1.1",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "sass": "^1.85.1"
+    "sass": "^1.85.1",
+    "swiper": "^11.2.5"
   },
   "browserslist": [
     "last 2 versions",

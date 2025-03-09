@@ -12,20 +12,20 @@
     }
     @media only screen and (max-width: 768px) {
         >div{
-            flex: 0 0 calc(100% / 4);
-        }
-    }
-    @media only screen and (max-width: 425px) {
-        >div{
-            padding: 4px;
             flex: 0 0 calc(100% / 3);
         }
     }
-    @media only screen and (max-width: 374px) {
+    @media only screen and (max-width: 468px) {
         >div{
+            padding: 4px;
             flex: 0 0 calc(100% / 2);
         }
     }
+    // @media only screen and (max-width: 321px) {
+    //     >div{
+    //         flex: 0 0 calc(100% / 1);
+    //     }
+    // }
 
 
     
