@@ -13,7 +13,7 @@ import "swiper/css";
 // import "swiper/css/navigation";
 import 'swiper/css/pagination';
 
-import im from '/public/image-demo/products/product_1.jpg';
+// import im from '/public/image-demo/products/product_1.jpg';
 export default function First() {
     const [banners, setBanners] = useState<any[]>([]);
 

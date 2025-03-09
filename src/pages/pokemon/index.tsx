@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/no-unused-vars */
 import PokemonItem from "@/components/PokemonItem";
 import Template from "@/components/template/Template";
 import usePokemonData from "@/getDataAPI/getPokemonData";
