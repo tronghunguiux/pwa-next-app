@@ -32,14 +32,14 @@ const PokemonDetail: NextPage = () => {
     }
   }, [name]);
 
-  if (!pokemon) return <p>Loading...</p>;
+  if (!pokemon) return <></>;
 
   return (
     <>
       <Template
-        title="Pokemon List"
+        title={`Pokemon | ${pokemon.name ?? 'sd'}`}
         description="get catch them all Pokemon"
-        image=""
+        image={pokemon.sprites.other['official-artwork'].front_default}
         url="/pokemon"
         classPage="pokemon-detail-page"
         idPage="pokemon_detail_page">

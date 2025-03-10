@@ -1,18 +1,54 @@
 [
     {
         "id": 1,
+        "product_id": "tw0748540",
         "title": "TRIUMPH DAYTONA 955 (2003-05) FURORE NERO ITALIA Slip on排氣管尾段【非認證管、需自主送驗】",
         "imageUrl": "/image-demo/banner-top/banner_top_1.jpg",
         "brand":"GPR",
-        "tag": [
+        "tags": [
             {
                 "label":"限時特價",
-                "class":"red"
+                "class":"purple"
+            },
+            {
+                "label":"快速出貨限特價",
+                "class":"orange"
+            },
+            {
+                "label":"限時特價",
+                "class":"crimson"
             }
         ],
         "get_point":"212點 (回饋1%,等於NT$212)",
-        "price_old":"NT$ 26,226",
-        "sale_off":"19% OFF",
-        "prices_update":"NT$ 21,177 "
+        "price_old":"26,226",
+        "sale_off":"19.8",
+        "prices":"21,177 "
+    },
+    {
+        "id": 2,
+        "product_id": "t00870579",
+        "title": "【OUTLET出清商品】THUNDER 尾段排氣管 (鈦合金) DUKE390 / RC390 (17-20) 等車款【非認證管、需自主送驗】",
+        "imageUrl": "/image-demo/banner-top/banner_top_1.jpg",
+        "brand":"ARROW",
+        "price_old":"18,359",
+        "sale_off":"9",
+        "prices":"6,926",
+        "get_point":""
+    },
+    {
+        "id":3,
+        "product_id": "th0496361",
+        "title": "後貨架 CRF300L / RALLY (21-)",
+        "tags": [
+            {
+                "label":"限時特價",
+                "class":"purple"
+            }
+        ],
+        "imageUrl": "/image-demo/banner-top/banner_top_1.jpg",
+        "brand":"H2C",
+        "sale_off":"",
+        "prices":"2,096",
+        "get_point":""
     }
 ]

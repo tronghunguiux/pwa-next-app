@@ -41,8 +41,8 @@ const DefaultLayout: React.FC<LayoutProps> = ({ title, description, keywords, im
           </div>
           {showAsideRight && <AsideRight />}
         </div>
-        <Footer />
       </main>
+      <Footer />
     </>
   );
 };

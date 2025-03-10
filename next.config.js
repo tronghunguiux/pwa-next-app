@@ -14,4 +14,6 @@ const withPWA = require('next-pwa')({
     skipWaiting: true,      // skip waiting for service worker activation
     buildExcludes: [/middleware-manifest.json$/, /dynamic-css-manifest.json$/] // Fix lỗi cache file 404 
 });
-module.exports = withPWA({ reactStrictMode: true });
+module.exports = withPWA({
+    reactStrictMode: true,
+});

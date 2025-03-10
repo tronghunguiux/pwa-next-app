@@ -58,7 +58,11 @@
     }
 }
 .product{
-    padding: 0 $margin-size*.5;
+    padding: $margin-size*.5;
+    >a{
+        position: relative;
+        display: block;
+    }
     .product-image{
         padding-top: 100%;
         position: relative;
@@ -73,9 +77,173 @@
             transform: translate(-50%, -50%);
         }
     }
+    .tag-state {
+        overflow: inherit;
+        li {
+            color: #fff;
+            text-transform: uppercase;
+            float: left
+        }
+    }
     .product-tag{
         position: absolute;
         top: 0;
         left: 0;
+        $tag_state: (
+            'red':$red,
+            'yellow':$yellow,
+            'orange':$orange,
+            'blue':$blue,
+            'purple':$purple,
+            'cyan':$cyan,
+            'crimson': #880e4f
+        );
+        .tagli + .tagli{
+            margin-left: $margin-size*.25;
+            margin-bottom: $margin-size*.25;
+        }
+        .tagli{
+            font-size: .625rem;
+            padding: 2px 4px;
+            -webkit-border-radius: 1px;
+            border-radius: 1px;
+            @each $label,$value in $tag_state{
+                &.#{$label}{
+                    background-color: $value;
+                    @if($label=='yellow'){
+                        color: $black;
+                    }
+                }
+            }
+        }
+        .sale-tag {
+            text-align: center;
+            min-width: 36px;
+            height: 42px;
+            background: $red;
+            font-size: 0.75rem;
+            padding: 0;
+            position: relative;
+            &::after, &::before{
+                content: "";
+                display: block;
+                position: absolute;
+                bottom: 1px;
+                -webkit-transform: translateY(100%);
+                -ms-transform: translateY(100%);
+                transform: translateY(100%);
+                border: 9px solid transparent;
+            }
+            &::after{
+                border-left-color: $red;
+                border-top-color: $red
+            }
+            &::before{
+                right: 0;
+                border-right-color: $red;
+                border-top-color: $red;
+            }
+            span {
+                display: block;
+                font-weight: 700;
+                font-size: 0.75rem;
+                padding: 0 2px;
+                i {
+                    font-size: 0.75em
+                }
+            }
+        }
     }
+    .product-info{
+        padding: 2px;
+        .brand {
+            font-size: 0.75rem;
+            color: #595959;
+            text-transform: uppercase
+        }
+        .name {
+            color: #2a313c;
+            font-weight: 700;
+            font-size: 0.875rem;
+            height: 36px;
+            white-space: pre-wrap
+        }
+        .price {
+            color: $red;
+            font-size: 0.9375rem;
+            font-weight: 700;
+            text-transform: uppercase
+        }
+        .old {
+            color: #595959;
+            font-size: 0.75rem;
+            text-decoration: line-through;
+            text-transform: uppercase
+        }
+        .review {
+            line-height: 1;
+            overflow: hidden;
+            color: #595959;
+            span {
+                color: #595959;
+                font-size: 0.75rem;
+                margin-left: 4px
+            }        
+        }
+    
+    }
+}
+
+.product.grid a {
+    border: 1px solid #eee;
+    background: #fff;
+    display: block
+}
+
+.product.grid figure {
+    height: 200px
+}
+
+.product.grid .tag-state {
+    position: absolute;
+    top: 0;
+    left: 0
+}
+
+.product.grid .tag-state li {
+    margin-left: 4px;
+    margin-bottom: 4px
+}
+
+.product.grid .tag-state li:first-child {
+    margin-left: 1px
+}
+
+.product.grid .tag-state .new-tag {
+    padding: 0 8px
+}
+
+.product.grid .product-info {
+    padding: 16px
+}
+
+.product.grid .brand,.product.grid .name {
+    margin-bottom: 4px
+}
+
+.product.grid .name,.product.grid .old,.product.grid .price {
+    line-height: 1.4
+}
+
+.product.grid .name,.product.grid .price {
+    margin-top: 4px
+}
+
+.product.grid .old {
+    min-height: 16px
+}
+
+.product.grid .review {
+    margin-top: 8px;
+    min-height: 16px
 }

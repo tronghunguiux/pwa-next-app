@@ -11,8 +11,8 @@ const Footer = () => {
                 <InstallButton />
             </div>
             <div className="container text-center">
-                <a href="https://www.webike.tw" className="mx-auto" target="_top">
-                    <Image src={ImgSlogan} alt="「Webike-摩托台灣」" width={160}/>
+                <a href="https://www.webike.tw" className="mx-auto d-inline-block line-height-xs" target="_top">
+                    <Image src={ImgSlogan} alt="「Webike-摩托台灣」" width={160} height={64}/>
                 </a>
                 <div className="pt-1 contact-information">
                     <p className="row">
